@@ -1,0 +1,104 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 120px;
+	margin-top: 30px;
+}
+
+.jumbotron {
+	background-image: url('img/y.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: #eaeaea;
+	overflow: hidden;
+}
+
+.jumbotron img {
+	width: 200px;
+	border: 5px solid #eaeaea;
+}
+
+
+.jumbotron h1, .jumbotron p {
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.jumbotron h1{
+	font-weight: bold;
+}
+
+hr {
+	width: 250px;
+	border-top: 3px solid black;
+}
+
+section {
+	min-height: 600px;
+}
+
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.Pmuncul, .pKanan.Pmuncul {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.gallery {
+	background-color: #eee;
+}
+
+.gallery .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.gallery .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.about{
+	margin-bottom: -200px;
+}
+.contact {
+	min-height: 800px;
+}
+
+nav .navbar-header a {
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	background-color: #333;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 1em;
+}
